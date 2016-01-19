@@ -24,4 +24,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonTapped:(UIButton *)sender {
+    NSArray *array = @[@1, @2, @3];
+    NSLog(@"value: %@", array[13]);
+    
+    NSMutableDictionary *mutableDictonary = [NSMutableDictionary dictionary];
+    mutableDictonary[nil] = nil;
+    [mutableDictonary setValue:@"value" forKey:nil];
+    [mutableDictonary setValue:nil forKey:@"key"];
+    [mutableDictonary setObject:@"value" forKey:nil];
+    [mutableDictonary setObject:array[13] forKey:@"key"];
+}
+
 @end

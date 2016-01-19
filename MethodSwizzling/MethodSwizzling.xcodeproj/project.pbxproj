@@ -13,6 +13,11 @@
 		BBA226E71C4E0D2600788E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA226E51C4E0D2600788E07 /* Main.storyboard */; };
 		BBA226E91C4E0D2600788E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA226E81C4E0D2600788E07 /* Assets.xcassets */; };
 		BBA226EC1C4E0D2600788E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA226EA1C4E0D2600788E07 /* LaunchScreen.storyboard */; };
+		BBA226F51C4E0D6E00788E07 /* MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA226F41C4E0D6E00788E07 /* MethodSwizzling.m */; };
+		BBA226FA1C4E0D7700788E07 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA226F71C4E0D7700788E07 /* UIViewController+Swizzling.m */; };
+		BBA226FB1C4E0D7700788E07 /* UIControl+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA226F91C4E0D7700788E07 /* UIControl+Swizzling.m */; };
+		BBA226FE1C4E100700788E07 /* NSArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA226FD1C4E100700788E07 /* NSArray+Swizzling.m */; };
+		BBA227011C4E148600788E07 /* NSMutableDictionary+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA227001C4E148600788E07 /* NSMutableDictionary+Swizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		BBA226E81C4E0D2600788E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBA226EB1C4E0D2600788E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA226ED1C4E0D2600788E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA226F31C4E0D6E00788E07 /* MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzling.h; sourceTree = "<group>"; };
+		BBA226F41C4E0D6E00788E07 /* MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzling.m; sourceTree = "<group>"; };
+		BBA226F61C4E0D7700788E07 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		BBA226F71C4E0D7700788E07 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		BBA226F81C4E0D7700788E07 /* UIControl+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Swizzling.h"; sourceTree = "<group>"; };
+		BBA226F91C4E0D7700788E07 /* UIControl+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Swizzling.m"; sourceTree = "<group>"; };
+		BBA226FC1C4E100700788E07 /* NSArray+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Swizzling.h"; sourceTree = "<group>"; };
+		BBA226FD1C4E100700788E07 /* NSArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Swizzling.m"; sourceTree = "<group>"; };
+		BBA226FF1C4E148600788E07 /* NSMutableDictionary+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Swizzling.h"; sourceTree = "<group>"; };
+		BBA227001C4E148600788E07 /* NSMutableDictionary+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Swizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,16 @@
 				BBA226E01C4E0D2600788E07 /* AppDelegate.m */,
 				BBA226E21C4E0D2600788E07 /* ViewController.h */,
 				BBA226E31C4E0D2600788E07 /* ViewController.m */,
+				BBA226F31C4E0D6E00788E07 /* MethodSwizzling.h */,
+				BBA226F41C4E0D6E00788E07 /* MethodSwizzling.m */,
+				BBA226F61C4E0D7700788E07 /* UIViewController+Swizzling.h */,
+				BBA226F71C4E0D7700788E07 /* UIViewController+Swizzling.m */,
+				BBA226F81C4E0D7700788E07 /* UIControl+Swizzling.h */,
+				BBA226F91C4E0D7700788E07 /* UIControl+Swizzling.m */,
+				BBA226FC1C4E100700788E07 /* NSArray+Swizzling.h */,
+				BBA226FD1C4E100700788E07 /* NSArray+Swizzling.m */,
+				BBA226FF1C4E148600788E07 /* NSMutableDictionary+Swizzling.h */,
+				BBA227001C4E148600788E07 /* NSMutableDictionary+Swizzling.m */,
 				BBA226E51C4E0D2600788E07 /* Main.storyboard */,
 				BBA226E81C4E0D2600788E07 /* Assets.xcassets */,
 				BBA226EA1C4E0D2600788E07 /* LaunchScreen.storyboard */,
@@ -150,7 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBA226E41C4E0D2600788E07 /* ViewController.m in Sources */,
+				BBA226FE1C4E100700788E07 /* NSArray+Swizzling.m in Sources */,
+				BBA226FA1C4E0D7700788E07 /* UIViewController+Swizzling.m in Sources */,
 				BBA226E11C4E0D2600788E07 /* AppDelegate.m in Sources */,
+				BBA226F51C4E0D6E00788E07 /* MethodSwizzling.m in Sources */,
+				BBA226FB1C4E0D7700788E07 /* UIControl+Swizzling.m in Sources */,
+				BBA227011C4E148600788E07 /* NSMutableDictionary+Swizzling.m in Sources */,
 				BBA226DE1C4E0D2600788E07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
