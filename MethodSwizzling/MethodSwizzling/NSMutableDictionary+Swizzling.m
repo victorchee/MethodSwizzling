@@ -16,7 +16,8 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [MethodSwizzling swizzleMethodWithClass:[self class] originalSelector:@selector(setValue:forKey:) andSwizzledSelector:@selector(swizzled_setValue:forKey:)];
-        [MethodSwizzling swizzleMethodWithClass:[self class] originalSelector:@selector(setObject:forKey:) andSwizzledSelector:@selector(swizzled_setObject:forKey:)];
+        // NSDictionary使用类族的模式，NSDictionary实际是一个抽象类，实际生成之后是NSDictionary的子类__NSDictionaryM，所以对NSDictionary做Swizzling是无效的，真正需要的是对__NSDictionaryM做Swizzling，所以需要对Class进行修改，使用new先生成一个对象，再获取他的Class
+        [MethodSwizzling swizzleMethodWithClass:[[self new] class] originalSelector:@selector(setObject:forKey:) andSwizzledSelector:@selector(swizzled_setObject:forKey:)];
         [MethodSwizzling swizzleMethodWithClass:[self class] originalSelector:@selector(setObject:forKeyedSubscript:) andSwizzledSelector:@selector(swizzled_setObject:forKeyedSubscript:)];
     });
 }
@@ -31,7 +32,6 @@
     }
 }
 
-// 为什么就这个弄不出来，留待日后再说吧。
 - (void)swizzled_setObject:(id)anObject forKey:(id<NSCopying>)aKey
 {
     NSLog(@"swizzled set object for key");
